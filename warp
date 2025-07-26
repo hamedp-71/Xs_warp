@@ -3,21 +3,6 @@ warp://8.39.125.128:1074/?ifp=50-100&ifps=50-100&ifpd=3-6&ifpm=m4#hamedp71-ipv4&
 
 warp://8.39.204.55:943/?ifp=40-80&ifps=50-100&ifpd=2-4&ifpm=m4#hamedp71&&detour=warp://8.39.204.24:4198/?ifp=2-4&ifpm=m4#hamedvpns
 
-#!wireguard
-[سرورA→سرورB]
-InterfacePrivateKey = کلیدخصوصی1
-InterfaceAddress = 172.16.0.2/32
-PeerPublicKey = bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-PeerEndpoint = 8.39.214.0:7152
-Chain = سرورB
-
-[سرورB]
-InterfacePrivateKey = کلیدخصوصی2
-InterfaceAddress = 172.16.0.3/32
-PeerPublicKey = bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-PeerEndpoint = 8.39.125.165:7281
-
-
 wireguard://SFuV%2F0ugfEffLMUXTMVoxp1QkEem78n1UNXesyTdQl4%3D@8.39.214.0:7152?address=172.16.0.2%2F32&reserved=214%2C131%2C47&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1280&keepalive=5&wnoise=quic&wnoisecount=15&wnoisedelay=1&wpayloadsize=5-10#hamedp71_wg
 wireguard://YPpJyBJjiScWwseA7AStcL3CGwBZ2LRfY4xy5o5ttHA%3D@8.39.125.165:7281?address=172.16.0.2%2F32&reserved=32%2C127%2C227&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1280&keepalive=5&wnoise=quic&wnoisecount=15&wnoisedelay=1&wpayloadsize=5-10#hamedp71_wg1
 wireguard://mPwW0O311rmK%2FUQdpQUZ%2BLB%2F3UaRN1IKMTW71l6jTWI%3D@8.39.125.158:1074?address=172.16.0.2%2F32&reserved=130%2C174%2C53&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1280&keepalive=5&wnoise=quic&wnoisecount=15&wnoisedelay=1&wpayloadsize=5-10#hamedp71_wg2
@@ -28,3 +13,13 @@ wireguard://yJ7cYhJroCubcuiV7luB4wB7yz046yFM2GgBR%2FFuXWQ%3D@8.39.204.57:945?add
 wireguard://ALMEnB6DI3YutNKuv%2BvwIHVTjaMw%2BAF4G4hi%2FvHmYmc%3D@8.34.146.70:934?address=172.16.0.2%2F32&reserved=6%2C86%2C210&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1280&keepalive=5&wnoise=quic&wnoisecount=15&wnoisedelay=1&wpayloadsize=5-10#hamedp71_wg7
 wireguard://mBk%2BoPVo1j2nR%2BODGA2wLgh47khj673HaBxPE%2BxLsVQ%3D@8.39.125.242:968?address=172.16.0.2%2F32&reserved=18%2C37%2C160&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1280&keepalive=5&wnoise=quic&wnoisecount=15&wnoisedelay=1&wpayloadsize=5-10#hamedp71_wg8
 wireguard://UFT4SHajohMWRtRhySopsUCji8oS8hJ9Iqk1oB9miUA%3D@8.39.125.12:8886?address=172.16.0.2%2F32&reserved=51%2C21%2C135&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1280&keepalive=5&wnoise=quic&wnoisecount=15&wnoisedelay=1&wpayloadsize=5-10#hamedp71_wg9
+
+wireguard://UG8l%2FRlQzwOcnfTVKtApKrGFUJDMz2lJ8Idv8%2FkVLEA%3D@8.34.214.0:2408?wnoise=quic&address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A81ec%3A2a68%3A559d%3Aab39%3A22b4%2F128&reserved=114%2C123%2C123&keepalive=10&wpayloadsize=1-5&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&wnoisedelay=1-2&wnoisecount=15&mtu=1330#hamedp71_wg10
+wireguard://UG8l%2FRlQzwOcnfTVKtApKrGFUJDMz2lJ8Idv8%2FkVLEA%3D@8.39.125.0:7152?wnoise=quic&address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A81ec%3A2a68%3A559d%3Aab39%3A22b4%2F128&reserved=114%2C123%2C123&keepalive=10&wpayloadsize=1-5&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&wnoisedelay=1-2&wnoisecount=15&mtu=1330#hamedp71_wg11
+wireguard://UG8l%2FRlQzwOcnfTVKtApKrGFUJDMz2lJ8Idv8%2FkVLEA%3D@8.39.204.0:1701?wnoise=quic&address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A81ec%3A2a68%3A559d%3Aab39%3A22b4%2F128&reserved=114%2C123%2C123&keepalive=10&wpayloadsize=1-5&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&wnoisedelay=1-2&wnoisecount=15&mtu=1330#hamedp71_wg12
+wireguard://UG8l%2FRlQzwOcnfTVKtApKrGFUJDMz2lJ8Idv8%2FkVLEA%3D@8.35.112.0:2408?wnoise=quic&address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A81ec%3A2a68%3A559d%3Aab39%3A22b4%2F128&reserved=114%2C123%2C123&keepalive=10&wpayloadsize=1-5&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&wnoisedelay=1-2&wnoisecount=15&mtu=1330#hamedp71_wg13
+wireguard://UG8l%2FRlQzwOcnfTVKtApKrGFUJDMz2lJ8Idv8%2FkVLEA%3D@8.39.214.0:7152?wnoise=quic&address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A81ec%3A2a68%3A559d%3Aab39%3A22b4%2F128&reserved=114%2C123%2C123&keepalive=10&wpayloadsize=1-5&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&wnoisedelay=1-2&wnoisecount=15&mtu=1330#hamedp71_wg14
+wireguard://UG8l%2FRlQzwOcnfTVKtApKrGFUJDMz2lJ8Idv8%2FkVLEA%3D@8.34.70.0:1701?wnoise=quic&address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A81ec%3A2a68%3A559d%3Aab39%3A22b4%2F128&reserved=114%2C123%2C123&keepalive=10&wpayloadsize=1-5&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&wnoisedelay=1-2&wnoisecount=15&mtu=1330#hamedp71_wg15
+wireguard://UG8l%2FRlQzwOcnfTVKtApKrGFUJDMz2lJ8Idv8%2FkVLEA%3D@8.34.146.0:3138?wnoise=quic&address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A81ec%3A2a68%3A559d%3Aab39%3A22b4%2F128&reserved=114%2C123%2C123&keepalive=10&wpayloadsize=1-5&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&wnoisedelay=1-2&wnoisecount=15&mtu=1330#hamedp71_wg16
+wireguard://UG8l%2FRlQzwOcnfTVKtApKrGFUJDMz2lJ8Idv8%2FkVLEA%3D@8.47.69.0:3138?wnoise=quic&address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A81ec%3A2a68%3A559d%3Aab39%3A22b4%2F128&reserved=114%2C123%2C123&keepalive=10&wpayloadsize=1-5&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&wnoisedelay=1-2&wnoisecount=15&mtu=1360#hamedp71_wg17
+wireguard://UG8l%2FRlQzwOcnfTVKtApKrGFUJDMz2lJ8Idv8%2FkVLEA%3D@8.6.112.0:3138?wnoise=quic&address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A81ec%3A2a68%3A559d%3Aab39%3A22b4%2F128&reserved=114%2C123%2C123&keepalive=10&wpayloadsize=1-5&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&wnoisedelay=1-2&wnoisecount=15&mtu=1330#hamedp71_wg18
