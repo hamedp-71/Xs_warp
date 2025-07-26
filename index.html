@@ -1,2 +1,28 @@
-cd hamedp-71.github.io
-echo "wireguard://example-config" > index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>لینک ساب</title>
+    <script>
+        // تشخیص کلاینت‌های ساب
+        const isSubClient = /clash|v2ray|shadowrocket|quantumult|surge|sing-box|sub/i.test(navigator.userAgent);
+        
+        if(isSubClient) {
+            // محتوای ساب را به صورت متنی نمایش می‌دهیم
+            document.contentType = 'text/plain';
+            document.write('wireguard://your-config-here');
+            document.close();
+        } else {
+            // برای مرورگرهای معمولی
+            window.location.href = "https://hamedp-71.github.io/Xs_warp/";
+        }
+    </script>
+</head>
+<body>
+    <noscript>
+        <!-- اگر JavaScript غیرفعال باشد -->
+        <pre>https://raw.githubusercontent.com/hamedp-71/Xs_warp/refs/heads/main/warp</pre>
+        <p>اگر به صورت خودکار اضافه نشد، این لینک را کپی و در کلاینت خود وارد کنید</p>
+    </noscript>
+</body>
+</html>
