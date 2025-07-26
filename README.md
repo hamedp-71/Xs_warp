@@ -1,8 +1,3 @@
-//profile-title: base64:2YfZhduM2LTZhyDZgdi52KfZhCDwn5iO8J+YjvCfmI4gaGFtZWRwNzE=
-//profile-update-interval: 1
-//subscription-userinfo: upload=0; download=76235908096; total=1486058684416; expire=1767212999
-#profile-web-page-url: @hamedvpns
-
 
 wireguard://SFuV%2F0ugfEffLMUXTMVoxp1QkEem78n1UNXesyTdQl4%3D@8.39.214.0:7152?address=172.16.0.2%2F32&reserved=214%2C131%2C47&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1280&keepalive=5&wnoise=quic&wnoisecount=15&wnoisedelay=1&wpayloadsize=5-10#hamedp71_wg
 
