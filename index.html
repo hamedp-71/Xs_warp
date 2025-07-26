@@ -1,40 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>لینک ساب</title>
     <script>
-        // تشخیص کلاینت‌های ساب
-        const subClients = ['clash', 'v2ray', 'shadowrocket', 'quantumult', 'surge', 'sing-box', 'curl', 'wget', 'httpie'];
-        const userAgent = navigator.userAgent.toLowerCase();
-        const isSubClient = subClients.some(client => userAgent.includes(client));
+        const urlParams = new URLSearchParams(window.location.search);
+        const isSubRequest = urlParams.has('format') && urlParams.get('format') === 'sub';
         
-        if(isSubClient) {
-            // تغییر نوع محتوا به text/plain
+        if(isSubRequest) {
+            // محتوای کانفیگ را برگردان
             document.contentType = 'text/plain';
+            document.write(`# کانفیگ ساب
             
-            // محتوای ساب اصلی را به صورت متنی نمایش می‌دهیم
-            document.write(`# لینک ساب اصلی (اتوماتیک)
-# تاریخ درخواست: ${new Date().toISOString()}
+vless://example.com
+vmess://example.com
+wireguard://example.com
+warp://example.com
             
-# محتوای ساب اصلی:
-https://لینک-اصلی-شما
-            
-# برای اطلاعات بیشتر به لینک مراجعه کنید`);
+# این کانفیگ به صورت خودکار تولید شده است`);
             document.close();
         } else {
-            // ریدایرکت برای مرورگرهای معمولی
             window.location.href = "https://لینک-اصلی-شما";
         }
     </script>
 </head>
 <body>
     <noscript>
-        <!-- Fallback برای زمانی که JavaScript غیرفعال است -->
-        <pre># لینک ساب اصلی
-https://لینک-اصلی-شما
-
-# JavaScript غیرفعال است، لطفاً از کلاینت ساب استفاده کنید</pre>
+        <p>JavaScript غیرفعال است. برای دریافت کانفیگ از لینک زیر استفاده کنید:</p>
+        <a href="?format=sub">دریافت کانفیگ</a>
     </noscript>
 </body>
 </html>
