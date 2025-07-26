@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>لینک ساب</title>
+    <script>
+        // لیست User-Agentهای مربوط به کلاینت‌های ساب
+        const subUserAgents = [
+            'clash', 'sub', 'v2ray', 'sing-box', 
+            'shadowrocket', 'quantumult', 'surge',
+            'curl', 'wget', 'httpie', 'python-requests'
+        ];
+        
+        // بررسی User-Agent
+        const userAgent = navigator.userAgent.toLowerCase();
+        const isSubClient = subUserAgents.some(agent => userAgent.includes(agent.toLowerCase()));
+        
+        if (!isSubClient) {
+            // ریدایرکت برای مرورگرهای معمولی
+            window.location.href = "https://لینک-اصلی-شما";
+        } else {
+            // برای کلاینت‌های ساب، محتوای متنی نمایش داده می‌شود
+            document.contentType = 'text/plain';
+            document.write(`لینک ساب اصلی:\nhttps://لینک-اصلی-شما\n\nتاریخ به‌روزرسانی: ${new Date().toISOString()}`);
+        }
+    </script>
+</head>
+<body>
+    <noscript>
+        <!-- Fallback برای زمانی که JavaScript غیرفعال است -->
+        <pre>لینک ساب اصلی:
+https://لینک-اصلی-شما
+
+تاریخ به‌روزرسانی: <script>document.write(new Date().toISOString());</script>
+        </pre>
+    </noscript>
+</body>
+</html>
