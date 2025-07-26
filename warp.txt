@@ -1,3 +1,116 @@
+{
+    "outbounds": [
+        {
+            "type": "wireguard",
+            "server": "188.114.99.0",
+            "server_port": 1018,
+            "local_address": [
+                "172.16.0.2/32",
+                "2606:4700:110:8637:847a:4b5a:7bb1:bde3/128"
+            ],
+            "private_key": "6IT7D+oKq+Mx84A8/tzYFcfDOX5gWhVTHC3t59NExGY=",
+            "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+            "reserved": [
+                37,
+                153,
+                13
+            ],
+            "mtu": 1330,
+            "tag": "@GheychiAmoozesh § 0"
+        },
+        {
+            "type": "wireguard",
+            "server": "188.114.99.1",
+            "server_port": 3139,
+            "local_address": [
+                "172.16.0.2/32",
+                "2606:4700:110:8637:847a:4b5a:7bb1:bde3/128"
+            ],
+            "private_key": "6IT7D+oKq+Mx84A8/tzYFcfDOX5gWhVTHC3t59NExGY=",
+            "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+            "reserved": [
+                37,
+                153,
+                13
+            ],
+            "mtu": 1330,
+            "tag": "@GheychiAmoozesh § 1"
+        },
+        {
+            "type": "wireguard",
+            "server": "188.114.99.2",
+            "server_port": 890,
+            "local_address": [
+                "172.16.0.2/32",
+                "2606:4700:110:8637:847a:4b5a:7bb1:bde3/128"
+            ],
+            "private_key": "6IT7D+oKq+Mx84A8/tzYFcfDOX5gWhVTHC3t59NExGY=",
+            "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+            "reserved": [
+                37,
+                153,
+                13
+            ],
+            "mtu": 1330,
+            "tag": "@GheychiAmoozesh § 2"
+        },
+        {
+            "type": "wireguard",
+            "server": "188.114.99.3",
+            "server_port": 939,
+            "local_address": [
+                "172.16.0.2/32",
+                "2606:4700:110:8637:847a:4b5a:7bb1:bde3/128"
+            ],
+            "private_key": "6IT7D+oKq+Mx84A8/tzYFcfDOX5gWhVTHC3t59NExGY=",
+            "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+            "reserved": [
+                37,
+                153,
+                13
+            ],
+            "mtu": 1330,
+            "tag": "@GheychiAmoozesh § 3"
+        },
+        {
+            "type": "wireguard",
+            "server": "188.114.99.4",
+            "server_port": 2096,
+            "local_address": [
+                "172.16.0.2/32",
+                "2606:4700:110:8637:847a:4b5a:7bb1:bde3/128"
+            ],
+            "private_key": "6IT7D+oKq+Mx84A8/tzYFcfDOX5gWhVTHC3t59NExGY=",
+            "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+            "reserved": [
+                37,
+                153,
+                13
+            ],
+            "mtu": 1330,
+            "tag": "@GheychiAmoozesh § 4"
+        },
+        {
+            "type": "wireguard",
+            "server": "188.114.99.5",
+            "server_port": 8080,
+            "local_address": [
+                "172.16.0.2/32",
+                "2606:4700:110:8637:847a:4b5a:7bb1:bde3/128"
+            ],
+            "private_key": "6IT7D+oKq+Mx84A8/tzYFcfDOX5gWhVTHC3t59NExGY=",
+            "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+            "reserved": [
+                37,
+                153,
+                13
+            ],
+            "mtu": 1330,
+            "tag": "@GheychiAmoozesh § 5"
+        }
+    ]
+}
+
 
 warp://8.39.125.128:1074/?ifp=50-100&ifps=50-100&ifpd=3-6&ifpm=m4#hamedp71-ipv4&&detour=warp://8.39.125.12:8886/?ifp=50-100&ifps=50-100&ifpd=3-6&ifpm=m4#Hamedp71-WoW-IPv4🇩🇪-1
 
@@ -22,3 +135,4 @@ wireguard://ALMEnB6DI3YutNKuv%2BvwIHVTjaMw%2BAF4G4hi%2FvHmYmc%3D@8.34.146.70:934
 wireguard://mBk%2BoPVo1j2nR%2BODGA2wLgh47khj673HaBxPE%2BxLsVQ%3D@8.39.125.242:968?address=172.16.0.2%2F32&reserved=18%2C37%2C160&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1280&keepalive=5&wnoise=quic&wnoisecount=15&wnoisedelay=1&wpayloadsize=5-10#hamedp71_wg8
 
 wireguard://UFT4SHajohMWRtRhySopsUCji8oS8hJ9Iqk1oB9miUA%3D@8.39.125.12:8886?address=172.16.0.2%2F32&reserved=51%2C21%2C135&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1280&keepalive=5&wnoise=quic&wnoisecount=15&wnoisedelay=1&wpayloadsize=5-10#hamedp71_wg9
+
