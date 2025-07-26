@@ -3,39 +3,19 @@ warp://8.39.125.128:1074/?ifp=50-100&ifps=50-100&ifpd=3-6&ifpm=m4#hamedp71-ipv4&
 
 warp://8.39.204.55:943/?ifp=40-80&ifps=50-100&ifpd=2-4&ifpm=m4#hamedp71&&detour=warp://8.39.204.24:4198/?ifp=2-4&ifpm=m4#hamedvpns
 
-[Interface]
-PrivateKey = SFuV%2F0ugfEffLMUXTMVoxp1QkEem78n1UNXesyTdQl4
-Address = 172.16.0.2/32
-DNS = 8.8.8.8, 1.1.1.1
-MTU = 1280
+#!wireguard
+[سرورA→سرورB]
+InterfacePrivateKey = کلیدخصوصی1
+InterfaceAddress = 172.16.0.2/32
+PeerPublicKey = bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+PeerEndpoint = 8.39.214.0:7152
+Chain = سرورB
 
-[Peer]
-PublicKey = bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-AllowedIPs = 0.0.0.0/0, ::/0
-Endpoint = 8.39.214.0:7152
-PersistentKeepalive = 25
-# پارامترهای پیشرفته:
-WNoise = quic
-WNoiseCount = 15
-WNoiseDelay = 1
-WPayloadSize = 5-10
-
-[Interface]
-PrivateKey = YPpJyBJjiScWwseA7AStcL3CGwBZ2LRfY4xy5o5ttHA
-Address = 172.16.0.3/32
-DNS = 8.8.8.8, 1.1.1.1
-MTU = 1280
-
-[Peer]
-PublicKey = bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-AllowedIPs = 0.0.0.0/0, ::/0
-Endpoint = 8.39.125.165:7281
-PersistentKeepalive = 25
-# پارامترهای پیشرفته:
-WNoise = quic
-WNoiseCount = 15
-WNoiseDelay = 1
-WPayloadSize = 5-10
+[سرورB]
+InterfacePrivateKey = کلیدخصوصی2
+InterfaceAddress = 172.16.0.3/32
+PeerPublicKey = bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+PeerEndpoint = 8.39.125.165:7281
 
 
 wireguard://SFuV%2F0ugfEffLMUXTMVoxp1QkEem78n1UNXesyTdQl4%3D@8.39.214.0:7152?address=172.16.0.2%2F32&reserved=214%2C131%2C47&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&mtu=1280&keepalive=5&wnoise=quic&wnoisecount=15&wnoisedelay=1&wpayloadsize=5-10#hamedp71_wg
