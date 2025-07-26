@@ -4,35 +4,37 @@
     <meta charset="utf-8">
     <title>لینک ساب</title>
     <script>
-        // لیست User-Agentهای مربوط به کلاینت‌های ساب
-        const subUserAgents = [
-            'clash', 'sub', 'v2ray', 'sing-box', 
-            'shadowrocket', 'quantumult', 'surge',
-            'curl', 'wget', 'httpie', 'python-requests'
-        ];
-        
-        // بررسی User-Agent
+        // تشخیص کلاینت‌های ساب
+        const subClients = ['clash', 'v2ray', 'shadowrocket', 'quantumult', 'surge', 'sing-box', 'curl', 'wget', 'httpie'];
         const userAgent = navigator.userAgent.toLowerCase();
-        const isSubClient = subUserAgents.some(agent => userAgent.includes(agent.toLowerCase()));
+        const isSubClient = subClients.some(client => userAgent.includes(client));
         
-        if (!isSubClient) {
-            // ریدایرکت برای مرورگرهای معمولی
-            window.location.href = "https://raw.githubusercontent.com/hamedp-71/Xs_warp/refs/heads/main/warp.txt";
-        } else {
-            // برای کلاینت‌های ساب، محتوای متنی نمایش داده می‌شود
+        if(isSubClient) {
+            // تغییر نوع محتوا به text/plain
             document.contentType = 'text/plain';
-            document.write(`لینک ساب اصلی:\nhttps://لینک-اصلی-شما\n\nتاریخ به‌روزرسانی: ${new Date().toISOString()}`);
+            
+            // محتوای ساب اصلی را به صورت متنی نمایش می‌دهیم
+            document.write(`# لینک ساب اصلی (اتوماتیک)
+# تاریخ درخواست: ${new Date().toISOString()}
+            
+# محتوای ساب اصلی:
+https://لینک-اصلی-شما
+            
+# برای اطلاعات بیشتر به لینک مراجعه کنید`);
+            document.close();
+        } else {
+            // ریدایرکت برای مرورگرهای معمولی
+            window.location.href = "https://لینک-اصلی-شما";
         }
     </script>
 </head>
 <body>
     <noscript>
         <!-- Fallback برای زمانی که JavaScript غیرفعال است -->
-        <pre>لینک ساب اصلی:
-https://raw.githubusercontent.com/hamedp-71/Xs_warp/refs/heads/main/warp.txt
+        <pre># لینک ساب اصلی
+https://لینک-اصلی-شما
 
-تاریخ به‌روزرسانی: <script>document.write(new Date().toISOString());</script>
-        </pre>
+# JavaScript غیرفعال است، لطفاً از کلاینت ساب استفاده کنید</pre>
     </noscript>
 </body>
 </html>
